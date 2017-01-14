@@ -1,4 +1,4 @@
-<?php namespace Latrell\Captcha\Facades;
+<?php namespace Jodan\Captcha\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
