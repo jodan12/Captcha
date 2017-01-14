@@ -38,10 +38,13 @@ class Captcha
             'alpha_numeric' => null
         ];
 
-        $init = !array_key_exists(Config::get('type'), $types) ? null : $types[Config::get('type')];
+        $configKey = 'captcha.';
+
+        $init = !array_key_exists(Config::get($configKey . '.type'), $types)
+            ? null : $types[Config::get($configKey . '.type')];
+
         $this->builder = new CaptchaBuilder($init);
 
-        $configKey = 'latrell-captcha.';
 
         $this->against_ocr = Config::get($configKey . 'against_ocr');
         $this->width = Config::get($configKey . 'width');
