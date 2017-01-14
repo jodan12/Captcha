@@ -43,7 +43,7 @@ class Captcha
         $init = !array_key_exists(Config::get($configKey . 'type'), $types)
             ? null : $types[Config::get($configKey . 'type')];
 
-        $this->builder = new CaptchaBuilder($init);
+        $this->builder = new CaptchaBuilder((string) $init);
 
 
         $this->against_ocr = Config::get($configKey . 'against_ocr');
