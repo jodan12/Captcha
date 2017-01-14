@@ -1,5 +1,5 @@
 <?php
-namespace Latrell\Captcha;
+namespace Jodan\Captcha;
 
 use Illuminate\Support\ServiceProvider;
 
