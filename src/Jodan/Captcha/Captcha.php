@@ -40,8 +40,8 @@ class Captcha
 
         $configKey = 'captcha.';
 
-        $init = !array_key_exists(Config::get($configKey . '.type'), $types)
-            ? null : $types[Config::get($configKey . '.type')];
+        $init = !array_key_exists(Config::get($configKey . 'type'), $types)
+            ? null : $types[Config::get($configKey . 'type')];
 
         $this->builder = new CaptchaBuilder($init);
 
