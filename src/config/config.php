@@ -3,7 +3,10 @@ return [
     // Enable or disable the distortion.
     'distortion' => true,
 
-    // Builds a code until it is not readable by ocrad.
+    // type of string to generate ['alpha', 'numeric', 'alpha_numeric']
+    'type' => 'alpha_numeric',
+
+	// Builds a code until it is not readable by ocrad.
     // You'll need to have shell_exec enabled, imagemagick and ocrad installed.
     'against_ocr' => false,
 

@@ -32,7 +32,14 @@ class Captcha
 
     public function __construct()
     {
-        $this->builder = new CaptchaBuilder();
+        $types = [
+            'alpha' => 'abcdefghijklmnopqrstuvwxyz',
+            'numeric' => mt_rand(100000, 999999),
+            'alpha_numeric' => null
+        ];
+
+        $init = !in_array(Config::get('type'), $types) ? null : $types[Config::get('type')];
+        $this->builder = new CaptchaBuilder($init);
 
         $configKey = 'latrell-captcha.';
 
