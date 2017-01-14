@@ -1,12 +1,12 @@
 {
-    "name": "latrell/captcha",
-    "description": "Captcha Package for Laravel 5",
+    "name": "jodan12/captcha",
+    "description": "Captcha Package for Laravel 5, forked from latrell/captcha",
     "keywords": ["L5", "Laravel 5", "Laravel", "Captcha", "security", "captcha image"],
     "license": "MIT",
     "authors": [
         {
-            "name": "Latrell Chan",
-            "email": "i@latrell.me"
+            "name": "Joseph Dan Alinsug",
+            "email": ""
         }
     ],
     "require": {
