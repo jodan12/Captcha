@@ -34,7 +34,7 @@ class Captcha
     {
         $types = [
             'alpha' => 'abcdefghijklmnopqrstuvwxyz',
-            'numeric' => mt_rand(100000, 999999),
+            'numeric' => mt_rand(1000, 9999),
             'alpha_numeric' => null
         ];
 
