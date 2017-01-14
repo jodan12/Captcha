@@ -1,5 +1,5 @@
 <?php
-namespace Latrell\Captcha;
+namespace Jodan\Captcha;
 
 use Gregwar\Captcha\CaptchaBuilder;
 use Illuminate\Support\Str;
@@ -8,7 +8,7 @@ use Config, Session, Hash, Response, URL;
 /**
  * 验证码
  *
- * @author Latrell Chan
+ * @author Jodan Chan
  *
  */
 class Captcha

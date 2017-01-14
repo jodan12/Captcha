@@ -1,5 +1,5 @@
 <?php
-Route::get(Config::get('latrell-captcha.route_name'), [
-	'middleware' => Config::get('latrell-captcha.middleware'),
-	'uses' => 'Latrell\Captcha\CaptchaController@getIndex'
+Route::get(Config::get('captcha.route_name'), [
+	'middleware' => Config::get('captcha.middleware'),
+	'uses' => 'Jodan\Captcha\CaptchaController@getIndex'
 ]);
