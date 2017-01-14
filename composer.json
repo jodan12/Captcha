@@ -1,5 +1,5 @@
 {
-    "name": "jodan12/captcha",
+    "name": "jodan12/Captcha",
     "description": "Captcha Package for Laravel 5, forked from latrell/captcha",
     "keywords": ["L5", "Laravel 5", "Laravel", "Captcha", "security", "captcha image"],
     "license": "MIT",
@@ -19,7 +19,7 @@
             "src/controllers"
         ],
         "psr-0": {
-            "Latrell\\Captcha\\": "src/"
+            "Jodan\\Captcha\\": "src/"
         }
     }
 }
